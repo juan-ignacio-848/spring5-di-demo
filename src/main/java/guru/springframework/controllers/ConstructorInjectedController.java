@@ -8,6 +8,9 @@ import guru.springframework.services.GreetingServiceImpl;
  */
 public class ConstructorInjectedController {
 
+    // PRIVATE -> GOOD
+    // Interface instead of implementation -> GOOD
+    // ConstructorInjectedController -> GOOD
     private GreetingService greetingService;
 
     public ConstructorInjectedController(GreetingService greetingService) {

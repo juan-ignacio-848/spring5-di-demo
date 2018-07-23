@@ -9,6 +9,9 @@ import guru.springframework.services.GreetingServiceImpl;
 
 public class PropertyInjectedController {
 
+    // PUBLIC -> BAD
+    // GreetingServiceIMPL -> IMPLEMENTATION = BAD!
+    // Property Injected -> BAD
     public GreetingServiceImpl greetingService;
 
     public String sayHello(){

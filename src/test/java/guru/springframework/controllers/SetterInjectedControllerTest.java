@@ -16,7 +16,7 @@ public class SetterInjectedControllerTest {
     @Before
     public void setUp() throws Exception {
         this.setterInjectedController = new SetterInjectedController();
-        this.setterInjectedController.setGreetingService(new GreetingServiceImpl());
+        this.setterInjectedController.setGreetingService(new GreetingServiceImpl()); // if we forget this, we can create a setterInjectedController without greetingService!
     }
 
     @Test
