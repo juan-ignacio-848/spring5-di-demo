@@ -9,10 +9,10 @@ import org.springframework.stereotype.Service;
  */
 @Service
 @Primary
-@Profile({"en", "default"}) // default is active when there are no profiles active.
-public class PrimaryGreetingServiceImpl implements GreetingService {
+@Profile("de")
+public class PrimaryGermanGreetingServiceImpl implements GreetingService {
 
-    public static final String HELLO_GURUS = "Hello Gurus --- Primary greeting service!!!!";
+    public static final String HELLO_GURUS = "GERMANNNNNNNNNNN HELLO!!!!";
 
     @Override
     public String sayGreeting() {
