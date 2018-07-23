@@ -22,6 +22,7 @@ public class ConstructorInjectedController {
     // ConstructorInjectedController -> GOOD
     private GreetingService greetingService;
 
+    // We use Qualifier because we have multiple implementations of GreetingService and Spring doesn't know which one to use.
     //@Autowired OPTIONAL
     public ConstructorInjectedController(@Qualifier("constructorInjectedGreetingServiceImpl") GreetingService greetingService) {
         this.greetingService = greetingService;
