@@ -10,7 +10,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication //Component scan from THIS PACKAGE AND DOWN. => From guru.springframework and down
-@ComponentScan(basePackages = {"guru.services", "guru.springframework"}) // We refactored packages so that services is out of guru.springframework scope. So we have to change the ComponentScan. This is a base it will search under those packages.
+@ComponentScan(basePackages = {"guru.springframework.services", "guru.springframework"}) // We refactored packages so that services is out of guru.springframework scope. So we have to change the ComponentScan. This is a base it will search under those packages.
 public class DiDemoApplication {
 
 	public static void main(String[] args) {
