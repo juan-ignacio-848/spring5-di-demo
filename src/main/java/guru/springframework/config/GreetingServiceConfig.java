@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Profile;
 
 // Sometimes it's easier and cleaner to have one clas to maintain your configuration
 // rather than having your annotations spread over a bunch of different classes.
+// Factory beans useful for database connections.
 @Configuration
 public class GreetingServiceConfig {
 
