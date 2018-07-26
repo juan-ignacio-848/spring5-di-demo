@@ -5,16 +5,9 @@ import guru.springframework.examplebeans.FakeJmsBroker;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.annotation.PropertySources;
 
+//We don't need the PropertySource annotation if we use application.properties
 @Configuration
-//BOTH WORK IF THERE'S A LOT MAYBE THE SECOND ONE IS CLEARER
-//@PropertySource({"classpath:datasource.properties", "classpath:jms.properties"})
-@PropertySources({
-        @PropertySource("classpath:datasource.properties"),
-        @PropertySource("classpath:jms.properties")
-})
 public class PropertyConfig {
 
     @Value("${guru.username}")
