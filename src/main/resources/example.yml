@@ -1,0 +1,42 @@
+# this is a comment
+
+# yaml is used to describe data structures
+# yaml is very sensitive in spacing. Use 2 / 4 spaces look at names
+
+name: John
+
+#List
+names: # Inline comment
+    - John
+    - Paul
+    - Ringo
+
+pund_sign: "#"
+
+book:
+    author: Joe Buck
+    publisher: random house
+
+#booleans can be tricky
+
+truth: yes
+
+another_truth: True
+
+more_true: true
+
+false: no #No, false, FALSE
+
+string_val: "This is it's quote"
+
+colon_string: "my coureses: one two three"
+
+include_new_lines: |
+    asdasd sdfsd sdfsdf
+    sdfsdfsdfg dfgdfg fdg
+    fdgdfg dfg dfg g
+
+ignore_new_lines: >
+    this is
+    just a
+    long string

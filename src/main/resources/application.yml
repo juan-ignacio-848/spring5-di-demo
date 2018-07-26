@@ -1,0 +1,10 @@
+# Spring boot is going to look for files starting with application and ending with .yml
+# Verify spaces
+# We don't need extra configuration. (See PropertyConfig)
+# Spring boot is going to parse all the properties in the resource folder (.yml .properties) and bring them
+# into the Spring Context for us. We can mix .yml and .properties files
+guru:
+  jms:
+    username: JMS Username
+    password: somepass
+    url: someUrL
