@@ -3,8 +3,27 @@
 # We don't need extra configuration. (See PropertyConfig)
 # Spring boot is going to parse all the properties in the resource folder (.yml .properties) and bring them
 # into the Spring Context for us. We can mix .yml and .properties files
+
+# No property at the beginning so it's picking up these properties by default
+
 guru:
   jms:
     username: JMS Username
     password: somepass
-    url: someUrL
+    url:
+
+--- #3 dashes = file separator inside the yaml file
+spring: # we specify that when the profile is set to 'de' to use 'JMS Username $$$$$ German' as the value for the guru.jms.username key
+  profiles: de
+
+guru:
+  jms:
+    username: JMS Username $$$$$ German
+
+--- # 3 dashes = file separator inside the yaml file
+spring: # we specify that when the profile is set to 'en' to use 'JMS Username %%%% English' as the value for the guru.jms.username key
+  profiles: en
+
+guru:
+  jms:
+    username: JMS Username %%%% English

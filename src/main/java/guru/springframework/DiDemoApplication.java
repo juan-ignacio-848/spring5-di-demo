@@ -17,7 +17,7 @@ public class DiDemoApplication {
 
 		MyController controller = (MyController) ctx.getBean("myController");
 
-		System.out.println(ctx.getBean(FakeDataSource.class).getDbUrl());
-		System.out.println(ctx.getBean(FakeJmsBroker.class).getPassword());
+		System.out.println(ctx.getBean(FakeDataSource.class).getUsername());
+		System.out.println(ctx.getBean(FakeJmsBroker.class).getUsername());
 	}
 }
